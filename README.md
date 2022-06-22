@@ -13,14 +13,14 @@ With a focus on those example pages:
 
 ## Installation
 
-On your system, you need [git](https://git-scm.com/), [composer](https://getcomposer.org/), [sqlite](https://www.sqlite.org) and [make](https://www.gnu.org/software/make/) installed.
+On your system, you need [git](https://git-scm.com/), [composer](https://getcomposer.org/), [sqlite](https://www.sqlite.org) installed.
 
 Then:
 
-1. Clone this repository
-1. Run `make clean` from the local clone
-1. Run `make install`
-1. Run `make run` to use the local PHP server
+```
+$ composer create-project drupal/recommended-project ui_suite_bootstrap_demo
+$ cd ui_suite_bootstrap_demo
+```
 
 
 ## Config & site building

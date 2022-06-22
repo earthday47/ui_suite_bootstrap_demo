@@ -1,103 +1,121 @@
 {
-    "name": "pdureau/ui_suite_bootstrap_demo",
-    "description": "Demo for UI Suite Bootstrap",
-    "type": "project",
-    "license": "GPL-2.0-or-later",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-	      },
-        {
-            "type": "vcs",
-        	  "url": "https://github.com/pdureau/ui_patterns_flag"
-	      },
-	     {
-				  "type": "package",
-				  "package": {
-				    "name": "asset/bootstrap",
-				    "version": "4.6.1",
-				    "type": "drupal-library",
-				    "extra": {
-				      "installer-name": "bootstrap"
-				    },
-				    "dist": {
-				      "type": "zip",
-				      "url": "https://api.github.com/repos/twbs/bootstrap/zipball/043a03c95a2ad6738f85b65e53b9dbdfb03b8d10",
-				      "reference": "043a03c95a2ad6738f85b65e53b9dbdfb03b8d10"
-				    }
-				  }
-				}
-    ],
-    "require": {
-        "composer/installers": "2.*",
-        "cweagans/composer-patches": "1.*",
-        "drupal/admin_toolbar": "3.*",
-        "drupal/advanced_text_formatter": "1.*",
-        "drupal/config_inspector": "2.*",
-        "drupal/core-composer-scaffold": "9.*",
-        "drupal/core": "9.*",
-        "drupal/ctools": "3.*",
-        "drupal/default_content": "2.*",
-        "drupal/field_formatter_range": "1.*",
-        "drupal/ui_patterns_entity_links": "1.*",
-        "drupal/ui_patterns_field_formatters": "1.*",
-        "drupal/ui_patterns_flag": "dev-master",
-        "drupal/ui_patterns_layout_builder": "1.*",
-        "drupal/ui_patterns_views_style": "1.*",
-        "drupal/ui_suite_bootstrap": "4.*",
-        "drupal/upgrade_status": "3.*",
-        "drush/drush": "11.*",
-        "vlucas/phpdotenv": "5.*",
-				"asset/bootstrap": "4.*"
+  "name": "pdureau/ui_suite_bootstrap_demo",
+  "description": "Demo for UI Suite Bootstrap",
+  "type": "drupal-profile",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
     },
-    "conflict": {
-        "drupal/drupal": "*"
+    {
+      "type": "vcs",
+      "url": "https://github.com/pdureau/ui_patterns_flag"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true,
-            "drupal/console-extend-plugin": true,
-            "drupal/core-composer-scaffold": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
-    },
-    "autoload": {
-        "files": ["load.environment.php"]
-    },
-    "extra": {
-        "drupal-scaffold": {
-            "locations": {
-                "web-root": "web/"
-            }
+    {
+      "type": "package",
+      "package": {
+        "name": "asset/bootstrap",
+        "version": "4.6.1",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "bootstrap"
         },
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-             "app/libraries/{$name}": [
-						  "type:drupal-library"
-						]
-        },
-        "patches": {
-            "drupal/ui_patterns": {
-                "PHP-8.1": "patches/0001-Issue-342-by-Grimreaper-PHP-8.1-compatibility.-First.patch"
-            }
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/twbs/bootstrap/zipball/043a03c95a2ad6738f85b65e53b9dbdfb03b8d10",
+          "reference": "043a03c95a2ad6738f85b65e53b9dbdfb03b8d10"
         }
-    },
-    "require-dev": {
-        "drupal/coder": "8.*",
-        "mglaman/drupal-check": "1.*",
-        "sebastian/phpcpd": "6.*",
-        "squizlabs/php_codesniffer": "3.*"
+      }
     }
+  ],
+  "require": {
+    "composer/installers": "2.*",
+    "cweagans/composer-patches": "1.*",
+    "drupal/admin_toolbar": "3.*",
+    "drupal/advanced_text_formatter": "1.*",
+    "drupal/config_inspector": "2.*",
+    "drupal/core-composer-scaffold": "9.*",
+    "drupal/core": "9.*",
+    "drupal/ctools": "3.*",
+    "drupal/default_content": "2.*",
+    "drupal/field_formatter_range": "1.*",
+    "drupal/ui_patterns_entity_links": "1.*",
+    "drupal/ui_patterns_field_formatters": "1.*",
+    "drupal/ui_patterns_flag": "dev-master",
+    "drupal/ui_patterns_layout_builder": "1.*",
+    "drupal/ui_patterns_views_style": "1.*",
+    "drupal/ui_suite_bootstrap": "4.*",
+    "drupal/upgrade_status": "3.*",
+    "drush/drush": "11.*",
+    "vlucas/phpdotenv": "5.*",
+    "asset/bootstrap": "4.*"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "cweagans/composer-patches": true,
+      "drupal/console-extend-plugin": true,
+      "drupal/core-composer-scaffold": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "autoload": {
+    "files": [
+      "load.environment.php"
+    ]
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
+    },
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/Commands/contrib/{$name}": [
+        "type:drupal-drush"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "web/themes/custom/{$name}": [
+        "type:drupal-custom-theme"
+      ],
+      "app/libraries/{$name}": [
+        "type:drupal-library"
+      ]
+    },
+    "patches": {
+      "drupal/ui_patterns": {
+        "PHP 8.1 support - https://github.com/nuvoleweb/ui_patterns/pull/343": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/343.patch"
+      }
+    }
+  },
+  "require-dev": {
+    "drupal/coder": "8.*",
+    "mglaman/drupal-check": "1.*",
+    "sebastian/phpcpd": "6.*",
+    "squizlabs/php_codesniffer": "3.*"
+  }
 }

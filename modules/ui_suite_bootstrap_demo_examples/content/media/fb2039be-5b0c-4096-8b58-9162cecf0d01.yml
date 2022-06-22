@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: fb2039be-5b0c-4096-8b58-9162cecf0d01
+  bundle: image
+  default_langcode: en
+  depends:
+    3f055678-3942-4451-964b-f9e2e9491f47: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Media 2'
+  created:
+    -
+      value: 1572263164
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_body:
+    -
+      value: "<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n"
+      format: basic_html
+  field_media_image:
+    -
+      entity: 3f055678-3942-4451-964b-f9e2e9491f47
+      alt: ''
+      title: ''
+      width: 320
+      height: 320

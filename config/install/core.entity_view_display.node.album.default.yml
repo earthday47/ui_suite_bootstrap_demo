@@ -1,0 +1,564 @@
+uuid: eb33a2bf-3d6d-4f19-9ccc-5b5b6bfc2338
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.album.body
+    - field.field.node.album.field_links
+    - field.field.node.album.field_medias
+    - node.type.album
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: pattern_jumbotron
+        layout_settings:
+          label: Header
+          context_mapping: {  }
+          pattern:
+            field_templates: default
+            variant: default
+        components:
+          1bbd6b4a-44ab-468c-9e22-b6710980988e:
+            uuid: 1bbd6b4a-44ab-468c-9e22-b6710980988e
+            region: content
+            configuration:
+              id: 'field_block:node:album:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: ddsl_string
+                label: hidden
+                settings:
+                  link_to_entity: 0
+                  html_element: h1
+                third_party_settings: {  }
+            weight: 0
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: border-primary
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+          9b5963e8-6064-4acb-b0de-a29e4f6eff86:
+            uuid: 9b5963e8-6064-4acb-b0de-a29e4f6eff86
+            region: content
+            configuration:
+              id: 'field_block:node:album:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: ddsl_text
+                label: hidden
+                settings:
+                  trim_length: '600'
+                  ellipsis: 1
+                  word_boundary: 1
+                  use_summary: 0
+                  token_replace: 0
+                  filter: drupal
+                  format: plain_text
+                  allowed_html:
+                    - a
+                    - b
+                    - br
+                    - dd
+                    - dl
+                    - dt
+                    - em
+                    - i
+                    - li
+                    - ol
+                    - p
+                    - strong
+                    - u
+                    - ul
+                  autop: 0
+                  html_element: p
+                third_party_settings: {  }
+            weight: 1
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: text-muted
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: lead
+          057a6043-b8e4-406a-9a0c-58f04bfe5079:
+            uuid: 057a6043-b8e4-406a-9a0c-58f04bfe5079
+            region: content
+            configuration:
+              id: 'field_block:node:album:field_links'
+              label: Links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: pattern_formatter
+                label: hidden
+                settings:
+                  pattern: button
+                  pattern_mapping:
+                    'field_properties:uri':
+                      destination: url
+                      weight: 0
+                      plugin: field_properties
+                      source: uri
+                    'field_properties:title':
+                      destination: label
+                      weight: 1
+                      plugin: field_properties
+                      source: title
+                  pattern_settings:
+                    alert:
+                      dismissible: 0
+                    card:
+                      image_position: ''
+                      heading_level: ''
+                    carousel:
+                      with_controls: 0
+                      with_indicators: 0
+                    grid_row:
+                      with_container: 0
+                      no_gutters: 0
+                      col_xs: ''
+                      col_sm: ''
+                      col_md: ''
+                      col_lg: ''
+                      col_xl: ''
+                      spacing_margin_bottom: ''
+                    list:
+                      list_type: ''
+                    media:
+                      image_position: ''
+                      image_margin: ''
+                  pattern_variant: primary
+                third_party_settings:
+                  field_formatter_range:
+                    order: 0
+                    limit: 1
+                    offset: 0
+            weight: 2
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: mt-2
+                spacing_margin_bottom: mb-2
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_title:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_title_extra: ''
+              ui_styles_extra: ''
+          17ea90f2-b2d1-4c3f-9c16-621e1b8ca8f8:
+            uuid: 17ea90f2-b2d1-4c3f-9c16-621e1b8ca8f8
+            region: content
+            configuration:
+              id: 'field_block:node:album:field_links'
+              label: Links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: pattern_formatter
+                label: hidden
+                settings:
+                  pattern: button
+                  pattern_mapping:
+                    'field_properties:uri':
+                      destination: url
+                      weight: 0
+                      plugin: field_properties
+                      source: uri
+                    'field_properties:title':
+                      destination: label
+                      weight: 1
+                      plugin: field_properties
+                      source: title
+                  pattern_settings:
+                    alert:
+                      dismissible: 0
+                    card:
+                      image_position: ''
+                      heading_level: ''
+                    carousel:
+                      with_controls: 0
+                      with_indicators: 0
+                    grid_row:
+                      with_container: 0
+                      no_gutters: 0
+                      col_xs: ''
+                      col_sm: ''
+                      col_md: ''
+                      col_lg: ''
+                      col_xl: ''
+                      spacing_margin_bottom: ''
+                    list:
+                      list_type: ''
+                    media:
+                      image_position: ''
+                      image_margin: ''
+                  pattern_variant: secondary
+                third_party_settings:
+                  field_formatter_range:
+                    order: 0
+                    limit: 99
+                    offset: 1
+            weight: 3
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: mt-2
+                spacing_margin_bottom: mb-2
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_title:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_title_extra: ''
+              ui_styles_extra: ''
+          834cd52e-6b54-4760-a4c0-ae711815b23d:
+            uuid: 834cd52e-6b54-4760-a4c0-ae711815b23d
+            region: content
+            configuration:
+              id: 'extra_field_block:node:album:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 4
+            additional: {  }
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: ''
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: ''
+              spacing_padding_bottom: ''
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: text-center
+              text_text_transform: ''
+              typography: ''
+            extra: ''
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Album
+          context_mapping: {  }
+          variant: ''
+          pattern_settings:
+            grid_row:
+              with_container: '0'
+              no_gutters: '0'
+          col: ''
+          col-sm: ''
+          col-md: ''
+          col-lg: ''
+          col-xl: ''
+          classes: ''
+        components:
+          444c8e23-6d1b-480a-9169-602de9a838d7:
+            uuid: 444c8e23-6d1b-480a-9169-602de9a838d7
+            region: content
+            configuration:
+              id: 'field_block:node:album:field_medias'
+              label: Medias
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: pattern_wrapper_entity_reference_formatter
+                label: hidden
+                settings:
+                  view_mode: card
+                  pattern: grid_row
+                  variants:
+                    alert: primary
+                    badge: primary
+                    blockquote: default
+                    button: primary
+                    button_group: default
+                    card: default
+                    card_layout: default
+                    carousel: default
+                    jumbotron: default
+                    list: default
+                    list_group: default
+                    navbar: default
+                  pattern_mapping:
+                    'field_wrapper:items':
+                      destination: content
+                      weight: 0
+                      plugin: field_wrapper
+                      source: items
+                  pattern_settings:
+                    alert:
+                      dismissible: 0
+                    card:
+                      image_position: ''
+                      heading_level: ''
+                    carousel:
+                      with_controls: 0
+                      with_indicators: 0
+                    grid_row:
+                      with_container: 0
+                      no_gutters: 0
+                      col_xs: ''
+                      col_sm: ''
+                      col_md: col-md-4
+                      col_lg: ''
+                      col_xl: ''
+                      spacing_margin_bottom: mb-4
+                    list:
+                      list_type: ''
+                    media:
+                      image_position: ''
+                      image_margin: ''
+                third_party_settings:
+                  field_formatter_range:
+                    order: 0
+                    limit: 0
+                    offset: 0
+            weight: 2
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: ''
+              ui_styles_title:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_title_extra: ''
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: bg-light
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: pt-5
+              spacing_padding_bottom: pb-5
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: ''
+              text_text_transform: ''
+              typography: ''
+            extra: album
+id: node.album.default
+targetEntityType: node
+bundle: album
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_medias:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

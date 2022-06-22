@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d09ccfec-399e-4a9b-ac19-ee8f6b1ce6e4
+  bundle: pricing
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Pricing example'
+  created:
+    -
+      value: 1573478721
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: "<p>Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>\r\n"
+      format: basic_html
+      summary: ''

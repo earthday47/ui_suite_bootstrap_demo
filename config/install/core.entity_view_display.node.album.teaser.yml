@@ -1,0 +1,34 @@
+uuid: 0122b3fd-2905-429b-849f-8be7b80586ab
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.album.body
+    - field.field.node.album.field_links
+    - field.field.node.album.field_medias
+    - node.type.album
+  module:
+    - text
+    - user
+id: node.album.teaser
+targetEntityType: node
+bundle: album
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_links: true
+  field_medias: true

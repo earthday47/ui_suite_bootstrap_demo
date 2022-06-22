@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 4c53a283-d360-4205-b227-7101929b56e2
+  bundle: featurette
+  default_langcode: en
+  depends:
+    db94d538-1870-4c3f-98d1-c9330abb40aa: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Oh yeah, it’s that good.'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_image:
+    -
+      entity: db94d538-1870-4c3f-98d1-c9330abb40aa
+  field_subtitle:
+    -
+      value: 'See for yourself.'

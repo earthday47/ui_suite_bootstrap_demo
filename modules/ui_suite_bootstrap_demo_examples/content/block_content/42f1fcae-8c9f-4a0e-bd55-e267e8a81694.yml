@@ -1,0 +1,34 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 42f1fcae-8c9f-4a0e-bd55-e267e8a81694
+  bundle: marketing
+  default_langcode: en
+  depends:
+    748a64ee-9f82-471c-842a-1e0849121f03: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'One more for good measure.'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_image:
+    -
+      entity: 748a64ee-9f82-471c-842a-1e0849121f03
+  field_link:
+    -
+      uri: 'internal:/'
+      title: 'Browse gallery'
+      options: {  }

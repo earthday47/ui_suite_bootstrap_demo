@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: f8f89abd-f1a0-4a5d-a200-cc8702454ecb
+  bundle: featurette
+  default_langcode: en
+  depends:
+    fb2039be-5b0c-4096-8b58-9162cecf0d01: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'And lastly, this one.'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_image:
+    -
+      entity: fb2039be-5b0c-4096-8b58-9162cecf0d01
+  field_subtitle:
+    -
+      value: Checkmate.

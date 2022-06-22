@@ -1,0 +1,276 @@
+uuid: 4dc1d964-0103-43c5-83ab-09c366c347f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.marketing
+    - field.field.block_content.marketing.body
+    - field.field.block_content.marketing.field_image
+    - field.field.block_content.marketing.field_link
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          variant: ''
+          pattern_settings:
+            grid_row:
+              with_container: '0'
+              no_gutters: '0'
+          col: ''
+          col-sm: ''
+          col-md: ''
+          col-lg: ''
+          col-xl: ''
+        components:
+          7d949027-1a2f-41fa-b9e3-b033be821688:
+            uuid: 7d949027-1a2f-41fa-b9e3-b033be821688
+            region: content
+            configuration:
+              id: 'field_block:block_content:marketing:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: -8
+            additional: {  }
+          dacd8cf5-d9b1-4fc0-94af-149a0a311740:
+            uuid: dacd8cf5-d9b1-4fc0-94af-149a0a311740
+            region: content
+            configuration:
+              id: 'field_block:block_content:marketing:field_link'
+              label: Link
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: pattern_formatter
+                label: hidden
+                settings:
+                  pattern: button
+                  pattern_mapping:
+                    'field_properties:uri':
+                      destination: url
+                      weight: 0
+                      plugin: field_properties
+                      source: uri
+                    'field_properties:title':
+                      destination: label
+                      weight: 1
+                      plugin: field_properties
+                      source: title
+                  pattern_settings:
+                    alert:
+                      dismissible: 0
+                    card:
+                      image_position: ''
+                      heading_level: ''
+                    carousel:
+                      with_controls: 0
+                      with_indicators: 0
+                    grid_row:
+                      with_container: 0
+                      no_gutters: 0
+                      col_xs: ''
+                      col_sm: ''
+                      col_md: ''
+                      col_lg: ''
+                      col_xl: ''
+                      spacing_margin_bottom: ''
+                    list:
+                      list_type: ''
+                    media:
+                      image_position: ''
+                      image_margin: ''
+                  pattern_variant: primary
+                third_party_settings: {  }
+            weight: -7
+            additional:
+              ui_styles_title:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_title_extra: ''
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: ''
+          0609a139-cf59-4166-9956-7183d0e0bb26:
+            uuid: 0609a139-cf59-4166-9956-7183d0e0bb26
+            region: content
+            configuration:
+              id: 'field_block:block_content:marketing:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: marketing
+                third_party_settings: {  }
+            weight: -10
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: rounded-circle
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+          8ca1e219-a005-494a-ac17-aa2f431ef02f:
+            uuid: 8ca1e219-a005-494a-ac17-aa2f431ef02f
+            region: content
+            configuration:
+              id: 'field_block:block_content:marketing:info'
+              label: 'Block description'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: ddsl_string
+                label: hidden
+                settings:
+                  link_to_entity: 0
+                  html_element: h2
+                  typography: ''
+                  text_alignment: ''
+                  text_transform: ''
+                  font_weight_italics: ''
+                  spacing_margin_top: ''
+                  spacing_margin_bottom: ''
+                  spacing_padding_top: ''
+                  spacing_padding_bottom: ''
+                  colors_color: ''
+                  colors_background_color: ''
+                third_party_settings: {  }
+            weight: -9
+            additional: {  }
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: ''
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: ''
+              spacing_padding_bottom: ''
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: text-center
+              text_text_transform: ''
+              typography: ''
+            extra: ''
+id: block_content.marketing.default
+targetEntityType: block_content
+bundle: marketing
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

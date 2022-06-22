@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3f055678-3942-4451-964b-f9e2e9491f47
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Ripples Moss.jpg'
+  uri:
+    -
+      value: 'public://2019-10/Ripples Moss.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 50670
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1572263211

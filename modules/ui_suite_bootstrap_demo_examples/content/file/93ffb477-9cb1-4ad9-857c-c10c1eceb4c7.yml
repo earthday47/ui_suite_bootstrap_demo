@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 93ffb477-9cb1-4ad9-857c-c10c1eceb4c7
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Aqua Blue.jpg'
+  uri:
+    -
+      value: 'public://2019-10/Aqua Blue.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 165436
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1572263120

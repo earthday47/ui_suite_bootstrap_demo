@@ -1,0 +1,534 @@
+uuid: 79b8cd20-e241-450f-9eb3-90f48b5f9ba0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media._group_1_
+    - field.field.media.image.field_body
+    - field.field.media.image.field_media_image
+    - image.style.large
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+    - text
+    - ui_patterns_entity_links
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: pattern_button_group
+        layout_settings:
+          label: ''
+          pattern:
+            field_templates: default
+            variant: default
+          context_mapping: {  }
+        components:
+          fc2fbf8c-915a-4b6d-8049-6d8e6196755d:
+            uuid: fc2fbf8c-915a-4b6d-8049-6d8e6196755d
+            region: buttons
+            configuration:
+              id: 'link_block:media:canonical'
+              label: Canonical
+              label_display: '0'
+              provider: ui_patterns_entity_links
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              label_override: View
+              pattern: button
+              variants:
+                alert: primary
+                badge: primary
+                blockquote: default
+                button: outline_secondary
+                button_group: default
+                card: default
+                card_layout: default
+                carousel: default
+                jumbotron: default
+                list: default
+                list_group: default
+                navbar: default
+              pattern_mapping:
+                alert:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                badge:
+                  settings:
+                    'entity_link:url':
+                      destination: url
+                      weight: '0'
+                    'entity_link:label':
+                      destination: label
+                      weight: '0'
+                blockquote:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                breadcrumb:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                button:
+                  settings:
+                    'entity_link:url':
+                      destination: url
+                      weight: '0'
+                    'entity_link:label':
+                      destination: label
+                      weight: '0'
+                button_group:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: label
+                      weight: '0'
+                card:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                card_layout:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                carousel:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                grid_row:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                jumbotron:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                list:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                list_group:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                media:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                navbar:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+              pattern_settings:
+                alert:
+                  dismissible: 0
+                card:
+                  image_position: ''
+                  heading_level: ''
+                carousel:
+                  with_controls: 0
+                  with_indicators: 0
+                grid_row:
+                  with_container: 0
+                  no_gutters: 0
+                  col_xs: ''
+                  col_sm: ''
+                  col_md: ''
+                  col_lg: ''
+                  col_xl: ''
+                  spacing_margin_bottom: ''
+                list:
+                  list_type: ''
+                media:
+                  image_position: ''
+                  image_margin: ''
+            weight: 0
+            additional:
+              ui_styles_title:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_title_extra: ''
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: ''
+          bb6523ef-94b4-42ad-9913-0b2ccee576e6:
+            uuid: bb6523ef-94b4-42ad-9913-0b2ccee576e6
+            region: buttons
+            configuration:
+              id: 'link_block:media:edit-form'
+              label: 'Edit form'
+              label_display: '0'
+              provider: ui_patterns_entity_links
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              label_override: Edit
+              pattern: button
+              variants:
+                alert: primary
+                badge: primary
+                blockquote: default
+                button: outline_secondary
+                button_group: default
+                card: default
+                card_layout: default
+                carousel: default
+                jumbotron: default
+                list: default
+                list_group: default
+                navbar: default
+              pattern_mapping:
+                alert:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                badge:
+                  settings:
+                    'entity_link:url':
+                      destination: url
+                      weight: '0'
+                    'entity_link:label':
+                      destination: label
+                      weight: '0'
+                blockquote:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                breadcrumb:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                button:
+                  settings:
+                    'entity_link:url':
+                      destination: url
+                      weight: '0'
+                    'entity_link:label':
+                      destination: label
+                      weight: '0'
+                button_group:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: label
+                      weight: '0'
+                card:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                card_layout:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                carousel:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                grid_row:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                jumbotron:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                list:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                list_group:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                media:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+                navbar:
+                  settings:
+                    'entity_link:url':
+                      destination: _hidden
+                      weight: '0'
+                    'entity_link:label':
+                      destination: _hidden
+                      weight: '0'
+              pattern_settings:
+                alert:
+                  dismissible: 0
+                card:
+                  image_position: ''
+                  heading_level: ''
+                carousel:
+                  with_controls: 0
+                  with_indicators: 0
+                grid_row:
+                  with_container: 0
+                  no_gutters: 0
+                  col_xs: ''
+                  col_sm: ''
+                  col_md: ''
+                  col_lg: ''
+                  col_xl: ''
+                  spacing_margin_bottom: ''
+                list:
+                  list_type: ''
+                media:
+                  image_position: ''
+                  image_margin: ''
+            weight: 1
+            additional:
+              ui_styles_title:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_title_extra: ''
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: ''
+          f199393a-e37b-4373-93dd-767412b23691:
+            uuid: f199393a-e37b-4373-93dd-767412b23691
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:image:field_media_image'
+              formatter:
+                type: image
+                label: visually_hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: ''
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: ''
+              spacing_padding_bottom: ''
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: ''
+              text_text_transform: ''
+              typography: ''
+            extra: null
+id: media.image._group_1_
+targetEntityType: media
+bundle: image
+mode: _group_1_
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

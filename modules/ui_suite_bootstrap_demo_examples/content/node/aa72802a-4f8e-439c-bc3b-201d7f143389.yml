@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: aa72802a-4f8e-439c-bc3b-201d7f143389
+  bundle: album
+  default_langcode: en
+  depends:
+    fb2039be-5b0c-4096-8b58-9162cecf0d01: media
+    db94d538-1870-4c3f-98d1-c9330abb40aa: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Album example'
+  created:
+    -
+      value: 1572255202
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: "<p>Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_links:
+    -
+      uri: 'internal:/'
+      title: 'Main call to action'
+      options: {  }
+    -
+      uri: 'internal:/'
+      title: 'Secondary action'
+      options: {  }
+  field_medias:
+    -
+      entity: fb2039be-5b0c-4096-8b58-9162cecf0d01
+    -
+      entity: db94d538-1870-4c3f-98d1-c9330abb40aa
+    -
+      entity: fb2039be-5b0c-4096-8b58-9162cecf0d01
+    -
+      entity: db94d538-1870-4c3f-98d1-c9330abb40aa
+    -
+      entity: fb2039be-5b0c-4096-8b58-9162cecf0d01
+    -
+      entity: db94d538-1870-4c3f-98d1-c9330abb40aa

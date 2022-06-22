@@ -1,0 +1,76 @@
+name: UI Suite Bootstrap demo
+type: profile
+description: ''
+version: 4.x
+install:
+  - admin_toolbar
+  - advanced_text_formatter
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - comment
+  - config
+  - config_inspector
+  - contextual
+  - ctools
+  - datetime
+  - dblog
+  - default_content
+  - dynamic_page_cache
+  - editor
+  - field
+  - field_formatter_range
+  - field_ui
+  - file
+  - filter
+  - flag
+  - hal
+  - image
+  - layout_builder
+  - layout_discovery
+  - layout_options
+  - link
+  - media
+  - media_library
+  - menu_ui
+  - node
+  - options
+  - page_cache
+  - path
+  - path_alias
+  - quickedit
+  - serialization
+  - sqlite
+  - system
+  - text
+  - token
+  - toolbar
+  - ui_examples
+  - ui_patterns
+  - ui_patterns_blocks
+  - ui_patterns_entity_links
+  - ui_patterns_field_formatters
+  - ui_patterns_flag
+  - ui_patterns_layout_builder
+  - ui_patterns_layouts
+  - ui_patterns_library
+  - ui_patterns_settings
+  - ui_patterns_views
+  - ui_patterns_views_style
+  - ui_styles
+  - ui_styles_layout_builder
+  - ui_styles_library
+  - update
+  - upgrade_status
+  - user
+  - views_ui
+  - menu_link_content
+  - views
+  - ui_suite_bootstrap_demo_tools
+  - ui_suite_bootstrap_demo_examples
+themes:
+  - ui_suite_bootstrap
+  - claro
+core_version_requirement: ^9

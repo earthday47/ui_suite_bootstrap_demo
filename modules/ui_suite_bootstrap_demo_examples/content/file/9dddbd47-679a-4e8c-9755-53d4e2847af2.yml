@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9dddbd47-679a-4e8c-9755-53d4e2847af2
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Human Simple 1920x1200.png'
+  uri:
+    -
+      value: 'public://2019-11/Human Simple 1920x1200.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 141555
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1573467451

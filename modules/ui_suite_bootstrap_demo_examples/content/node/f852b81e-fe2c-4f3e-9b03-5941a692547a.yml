@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f852b81e-fe2c-4f3e-9b03-5941a692547a
+  bundle: carousel
+  default_langcode: en
+  depends:
+    265146f2-243d-43fc-9437-5d8379218664: block_content
+    c93c4c3f-9033-48cd-bb03-1f5c1bc66976: block_content
+    42f1fcae-8c9f-4a0e-bd55-e267e8a81694: block_content
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Carousel example'
+  created:
+    -
+      value: 1572346811
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_marketing:
+    -
+      entity: 265146f2-243d-43fc-9437-5d8379218664
+    -
+      entity: c93c4c3f-9033-48cd-bb03-1f5c1bc66976
+    -
+      entity: 42f1fcae-8c9f-4a0e-bd55-e267e8a81694
